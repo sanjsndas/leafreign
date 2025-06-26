@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - Leafreign</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-green: #2e7d32;
+            --secondary-green: #81c784;
+            --accent-gold: #ffd700;
+            --dark-green: #1b5e20;
+            --light-bg: #f1f8e9;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--light-bg);
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('p2.jpeg');
+            background-size: cover;
+            background-position: center;
+            min-height: 40vh;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-gold);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .section-heading {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-green);
+        }
+        
+        .terms-item {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="p1.png" alt="Leafreign Logo" class="h-10 w-10">
+                <span class="text-2xl font-bold text-gray-800">Leafreign</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link text-gray-800 hover:text-green-700 font-medium">Home</a>
+                <a href="privacy.html" class="nav-link text-gray-800 hover:text-green-700 font-medium">Privacy</a>
+                <a href="terms.html" class="nav-link text-green-700 font-medium" aria-current="page">Terms & Conditions</a>
+                <a href="cookies.html" class="nav-link text-gray-800 hover:text-green-700 font-medium">Cookies</a> 
+                <a href="contact.html" class="nav-link text-gray-800 hover:text-green-700 font-medium">Contact Us</a>
+            </div>
+            
+            <button class="md:hidden bg-green-600 text-white px-4 py-2 rounded-lg">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center text-center text-white">
+        <div class="container mx-auto px-6">
+            <h1 class="text-5xl font-bold mb-4">Terms & Conditions</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Terms governing your use of Leafreign services and website</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-2">Welcome to Leafreign</h2>
+                    <div class="w-24 h-1 bg-green-600 mx-auto"></div>
+                </div>
+                
+                <div class="mb-16">
+                    <p class="text-lg text-gray-600 mb-6">These Terms of Service ("Terms") govern your access to and use of Leafreign's website, services, products, and applications (collectively, the "Services"). By accessing or using our Services, you agree to these Terms. If you do not agree to these Terms, please do not access or use our Services.</p>
+                    
+                    <p class="text-lg text-gray-600 mb-6">These Terms were last updated on June 15, 2023. We may modify these Terms at any time. Continued use of our Services after changes constitutes acceptance of the modified Terms.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">1. Service Agreement</h3>
+                
+                <!-- Terms Item 1 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">1.1 Eligibility</h4>
+                    <p class="text-gray-600">To use our Services, you must be at least 18 years old and capable of forming a binding contract with Leafreign. By using our Services, you represent that you meet these requirements. We reserve the right to refuse service to anyone for any reason at any time.</p>
+                </div>
+                
+                <!-- Terms Item 2 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">1.2 Service Description</h4>
+                    <p class="text-gray-600">Leafreign provides professional gardening services including landscape design, maintenance, consultation and related services. Specific service details will be provided in individual service agreements. We reserve the right to modify or discontinue any service feature at any time.</p>
+                </div>
+                
+                <!-- Terms Item 3 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">1.3 Account Registration</h4>
+                    <p class="text-gray-600">Certain Services may require account creation. You must provide accurate information and keep it updated. You are responsible for account security and all activities under your account. Notify us immediately of unauthorized use. We may suspend accounts violating these Terms.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">2. Payment Terms</h3>
+                
+                <!-- Terms Item 4 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">2.1 Pricing</h4>
+                    <p class="text-gray-600">Service pricing is provided in estimates and confirmed in service contracts. Prices are subject to change with notice for future work. Additional services not included in original estimates will be billed separately. All prices are in US dollars unless otherwise noted.</p>
+                </div>
+                
+                <!-- Terms Item 5 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">2.2 Payment Methods</h4>
+                    <p class="text-gray-600">We accept major credit cards, debit cards, and electronic bank transfers. Cash payments may be accepted for on-site services. Full payment terms will be specified in service contracts. Late payments may incur additional fees and interest.</p>
+                </div>
+                
+                <!-- Terms Item 6 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">2.3 Deposits</h4>
+                    <p class="text-gray-600">Certain services may require deposits to secure scheduling. Deposit amounts and refund policies vary by service type and will be specified in contracts. Unused deposits may be forfeited if services are canceled without sufficient notice.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">3. Cancellations & Refunds</h3>
+                
+                <!-- Terms Item 7 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">3.1 Service Cancellation</h4>
+                    <p class="text-gray-600">Clients may cancel services according to contract terms. Cancellation fees may apply based on notice period and work completed. Emergency cancellations due to weather or safety concerns will be rescheduled at no additional charge.</p>
+                </div>
+                
+                <!-- Terms Item 8 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">3.2 Refund Policy</h4>
+                    <p class="text-gray-600">Refund eligibility varies by service. Generally, refunds are not provided for completed services. Unsatisfactory work will be remedied at our expense. Prepayments for future services may be refunded on a prorated basis minus cancellation fees if applicable.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">4. Property Conditions</h3>
+                
+                <!-- Terms Item 9 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">4.1 Site Preparation</h4>
+                    <p class="text-gray-600">Clients are responsible for preparing work areas as specified in service agreements. This includes clearing personal items, securing pets, and marking underground utilities. Additional charges may apply for delays caused by unprepared sites.</p>
+                </div>
+                
+                <!-- Terms Item 10 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">4.2 Property Access</h4>
+                    <p class="text-gray-600">Client grants Leafreign reasonable access to perform services at scheduled times. Failure to provide access may result in cancellation fees. We require safe working conditions and reserve the right to refuse unsafe work environments.</p>
+                </div>
+                
+                <!-- Terms Item 11 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">4.3 Property Damage</h4>
+                    <p class="text-gray-600">While we take utmost care, gardening work involves inherent risks of minor property damage. Leafreign will repair any negligent damage caused by our team. We are not liable for pre-existing conditions or damage caused by factors beyond our control.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">5. Intellectual Property</h3>
+                
+                <!-- Terms Item 12 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">5.1 Website Content</h4>
+                    <p class="text-gray-600">All website content including text, graphics, logos, and images is Leafreign's property and protected by copyright laws. Unauthorized use is prohibited. Limited personal, non-commercial use is permitted with attribution.</p>
+                </div>
+                
+                <!-- Terms Item 13 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">5.2 Design Ownership</h4>
+                    <p class="text-gray-600">Landscape designs created by Leafreign remain our intellectual property. Clients receive license to implement approved designs at specified properties. Unauthorized reproduction or commercial use is prohibited without written consent.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">6. User Content</h3>
+                
+                <!-- Terms Item 14 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">6.1 User Submissions</h4>
+                    <p class="text-gray-600">By submitting content (photos, reviews, etc.), you grant Leafreign non-exclusive rights to use, display, and modify it for business purposes. You represent that you own or have permission to share submitted content.</p>
+                </div>
+                
+                <!-- Terms Item 15 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">6.2 Content Standards</h4>
+                    <p class="text-gray-600">User content must be lawful, non-defamatory, and appropriate. We may remove content violating these standards. Do not submit confidential or sensitive personal information through public channels.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">7. Permits & Regulations</h3>
+                
+                <!-- Terms Item 16 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">7.1 Regulatory Compliance</h4>
+                    <p class="text-gray-600">Certain services may require permits or approvals. While we assist in the process, clients are ultimately responsible for obtaining necessary permissions and paying associated fees. Services may be delayed until approvals are secured.</p>
+                </div>
+                
+                <!-- Terms Item 17 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">7.2 HOA & Local Restrictions</h4>
+                    <p class="text-gray-600">Clients must inform us of any homeowner association rules or local ordinances affecting our services. We are not responsible for violations of unknown restrictions. Additional charges may apply for modifications due to regulatory requirements.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">8. Plant Guarantees</h3>
+                
+                <!-- Terms Item 18 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">8.1 Plant Health</h4>
+                    <p class="text gray-600">We guarantee plants installed by Leafreign for 90 days against failure due to defects or improper installation. Client must provide proper watering and care as instructed. Drought, extreme weather, pests or neglect void this guarantee.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">9. Limitation of Liability</h3>
+                
+                <!-- Terms Item 19 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">9.1 General Limitation</h4>
+                    <p class="text-gray-600">Leafreign's total liability for any claim related to our Services is limited to the service fee paid. We are not liable for incidental, consequential, or punitive damages. Some jurisdictions don't allow limitations, so these may not apply to you.</p>
+                </div>
+                
+                <!-- Terms Item 20 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">9.2 Force Majeure</h4>
+                    <p class="text-gray-600">We are not liable for delays or failures caused by events beyond our reasonable control including natural disasters, acts of war, pandemics, utility failures, or government actions. Affected services will be rescheduled or refunded.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">10. Indemnification</h3>
+                
+                <!-- Terms Item 21 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">10.1 User Responsibility</h4>
+                    <p class="text-gray-600">You agree to indemnify Leafreign against claims arising from your misuse of Services, violation of these Terms, or infringement of others' rights. This includes legal fees and damages. We will notify you of any such claim.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">11. Dispute Resolution</h3>
+                
+                <!-- Terms Item 22 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">11.1 Informal Resolution</h4>
+                    <p class="text-gray-600">We prefer to resolve disputes informally. Please contact us with concerns before initiating formal proceedings. Many issues can be resolved quickly through good faith negotiations between parties.</p>
+                </div>
+                
+                <!-- Terms Item 23 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">11.2 Arbitration</h4>
+                    <p class="text-gray-600">If informal resolution fails, disputes will be resolved by binding arbitration in New York. Arbitration is more efficient than court litigation. The arbitrator's award is final and may be entered in any court with jurisdiction.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">12. Governing Law</h3>
+
+                <!-- Terms Item 24 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">12.1 Jurisdiction</h4>
+                    <p class="text-gray-600">These Terms are governed by the laws of the State of New York, without regard to its conflict of law principles. Any disputes arising from these Terms will be resolved in the courts located in New York County.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">13. Changes to Terms</h3>
+
+                <!-- Terms Item 25 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">13.1 Modifications</h4>
+                    <p class="text-gray-600">We may update these Terms from time to time. We will notify you of any significant changes by posting a notice on our website. Your continued use of our Services after changes constitutes acceptance of the modified Terms.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">14. Contact Information</h3>
+
+                <!-- Terms Item 26 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">14.1 How to Reach Us</h4>
+                    <p class="text-gray-600">If you have any questions about these Terms, please contact us at:</p>
+                    <p class="text-gray-600">Email: support@leafreign.com</p>
+                    <p class="text-gray-600">Phone: (123) 456-7890</p>
+                    <p class="text-gray-600">Address: 345 E 24th St, New York, NY 10010, USA</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">15. Miscellaneous</h3>
+
+                <!-- Terms Item 27 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">15.1 Severability</h4>
+                    <p class="text-gray-600">If any provision of these Terms is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary so that the remaining provisions will remain in full force and effect.</p>
+                </div>
+                
+                <!-- Terms Item 28 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">15.2 Waiver</h4>
+                    <p class="text-gray-600">No waiver of any term of these Terms shall be deemed a further or continuing waiver of such term or any other term, and any failure of Leafreign to assert a right or provision under these Terms shall not constitute a waiver of such right or provision.</p>
+                </div>
+                
+                <!-- Terms Item 29 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">15.3 Entire Agreement</h4>
+                    <p class="text-gray-600">These Terms constitute the entire agreement between you and Leafreign regarding your use of our Services and supersede any prior agreements between you and Leafreign.</p>
+                </div>
+                
+                <!-- Terms Item 30 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">15.4 Assignment</h4>
+                    <p class="text-gray-600">You may not assign or transfer these Terms, by operation of law or otherwise, without our prior written consent. We may assign or transfer these Terms at our discretion without restriction.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">16. Acknowledgment</h3>
+
+                <!-- Terms Item 31 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">16.1 Acceptance of Terms</h4>
+                    <p class="text-gray-600">By using our Services, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy. If you do not agree to these Terms, you must not use our Services.</p>
+                </div>
+                
+                <!-- Terms Item 32 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">16.2 Effective Date</h4>
+                    <p class="text-gray-600">These Terms are effective as of June 15, 2023. Please review them periodically for any updates or changes.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">17. Additional Provisions</h3>
+
+                <!-- Terms Item 33 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">17.1 Third-Party Services</h4>
+                    <p class="text-gray-600">Our Services may include links to third-party websites or services that are not owned or controlled by Leafreign. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party services.</p>
+                </div>
+                
+                <!-- Terms Item 34 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">17.2 Feedback</h4>
+                    <p class="text-gray-600">We welcome your feedback regarding our Services. By providing feedback, you grant us the right to use your feedback for any purpose without any obligation to you.</p>
+                </div>
+                
+                <!-- Terms Item 35 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">17.3 Force Majeure</h4>
+                    <p class="text-gray-600">Leafreign shall not be liable for any failure to perform its obligations under these Terms if such failure results from any cause beyond Leafreign's reasonable control, including, but not limited to, mechanical, electronic, or communications failure or degradation.</p>
+                </div>
+                
+                <!-- Terms Item 36 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">17.4 Headings</h4>
+                    <p class="text-gray-600">The section headings in these Terms are for convenience only and have no legal or contractual effect.</p>
+                </div>
+                
+                <!-- Terms Item 37 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">17.5 Contact for Questions</h4>
+                    <p class="text-gray-600">For any questions about these Terms, please contact us at the information provided above. We are here to assist you with any inquiries or concerns.</p>
+                </div>
+                
+                <!-- Terms Item 38 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">17.6 Privacy Policy</h4>
+                    <p class="text-gray-600">Your use of our Services is also governed by our Privacy Policy, which outlines how we collect, use, and protect your personal information. Please review our Privacy Policy for more details.</p>
+                </div>
+                
+                <!-- Terms Item 39 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">17.7 User Responsibilities</h4>
+                    <p class="text-gray-600">You are responsible for complying with all applicable laws and regulations in connection with your use of our Services. This includes obtaining any necessary permits or licenses required for your gardening projects.</p>
+                </div>
+                
+                <!-- Terms Item 40 -->
+                <div class="terms-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">17.8 Limitation of Use</h4>
+                    <p class="text-gray-600">You agree not to use our Services for any unlawful purpose or in a manner that could damage, disable, overburden, or impair our Services or interfere with any other party's use of our Services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-6 bg-gray-800 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2023 Leafreign. All rights reserved.</p>
+            <p>345 E 24th St, New York, NY 10010, USA</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+</body>
+</html>

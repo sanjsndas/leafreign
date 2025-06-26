@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Leafreign</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-green: #2e7d32;
+            --secondary-green: #81c784;
+            --accent-gold: #ffd700;
+            --dark-green: #1b5e20;
+            --light-bg: #f1f8e9;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--light-bg);
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('p2.jpeg');
+            background-size: cover;
+            background-position: center;
+            min-height: 40vh;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-gold);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .section-heading {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-green);
+        }
+        
+        .contact-item {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .contact-form {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+        
+        .info-card {
+            background-color: white;
+            border-left: 4px solid var(--primary-green);
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="p1.png" alt="Leafreign Logo" class="h-10 w-10">
+                <span class="text-2xl font-bold text-gray-800">Leafreign</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link text-gray-800 hover:text-green-700 font-medium">Home</a>
+                <a href="privacy.html" class="nav-link text-gray-800 hover:text-green-700 font-medium">Privacy</a>
+                <a href="terms.html" class="nav-link text-gray-800 hover:text-green-700 font-medium">Terms & Conditions</a>
+                <a href="cookies.html" class="nav-link text-gray-800 hover:text-green-700 font-medium">Cookies</a>
+                                <a href="contact.html" class="nav-link text-green-700 font-medium" aria-current="page">Contact Us</a>
+            </div>
+            
+            <button class="md:hidden bg-green-600 text-white px-4 py-2 rounded-lg">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center text-center text-white">
+        <div class="container mx-auto px-6">
+            <h1 class="text-5xl font-bold mb-4">Contact Leafreign</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Get in touch with our gardening experts for consultations, questions, or service inquiries</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-2">Send Us a Message</h2>
+                    <div class="w-24 h-1 bg-green-600 mx-auto"></div>
+                    <p class="text-lg text-gray-600 mt-4">Fill out the form below and our team will respond within 24-48 hours</p>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-2">Full Name*</label>
+                            <input type="text" id="name" class="w-full p-3 border border-gray-300 rounded" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-2">Email Address*</label>
+                            <input type="email" id="email" class="w-full p-3 border border-gray-300 rounded" required>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full p-3 border border-gray-300 rounded">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 mb-2">Subject*</label>
+                            <select id="subject" class="w-full p-3 border border-gray-300 rounded" required>
+                                <option value="">Select a topic</option>
+                                <option value="consultation">Service Consultation</option>
+                                <option value="quote">Request Quote</option>
+                                <option value="maintenance">Maintenance Services</option>
+                                <option value="emergency">Emergency Service</option>
+                                <option value="feedback">Feedback/Suggestion</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 mb-2">Your Message*</label>
+                        <textarea id="message" rows="6" class="w-full p-3 border border-gray-300 rounded" required></textarea>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="form-checkbox text-green-600">
+                            <span class="ml-2 text-gray-700">I'd like to receive gardening tips and updates from Leafreign</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full inline-block transition duration-300 ease-in-out transform hover:scale-105">
+                        Send Message <i class="fas fa-paper-plane ml-2"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="section-heading text-3xl font-bold text-gray-800 mb-12 text-center">Ways to Reach Us</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <div class="info-card">
+                        <div class="text-green-600 text-4xl mb-4">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Visit Us</h3>
+                        <p class="text-gray-600">345 E 24th St, New York, NY 10010, USA</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="text-green-600 text-4xl mb-4">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Call Us</h3>
+                        <p class="text-gray-600">(123) 456-7890</p>
+                        <p class="text-gray-600 text-sm">Mon-Fri: 8am-6pm</p>
+                        <p class="text-gray-600 text-sm">Sat: 9am-4pm</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="text-green-600 text-4xl mb-4">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Email Us</h3>
+                        <p class="text-gray-600">contact@leafreign.com</p>
+                        <p class="text-gray-600">support@leafreign.com</p>
+                    </div>
+                </div>
+                
+                <div class="text-center mb-16">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Connect With Us</h3>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-green-600 hover:text-green-800 text-2xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-green-600 hover:text-green-800 text-2xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-green-600 hover:text-green-800 text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-green-600 hover:text-green-800 text-2xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-green-600 hover:text-green-800 text-2xl"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">1. Contact Methods Overview</h3>
+                
+                <!-- Contact Item 1 -->
+                <div class="contact-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">1.1 Primary Contact Channels</h4>
+                    <p class="text-gray-600">Leafreign offers multiple convenient ways to get in touch with our team. Our primary contact methods include phone, email, and in-person consultations at our New York office. For immediate assistance during business hours, phone calls are recommended. Email is ideal for detailed inquiries where attaching documents or photos is helpful. For complex project discussions, we recommend scheduling an in-person consultation at our office or your property.</p>
+                </div>
+                
+                <!-- Contact Item 2 -->
+                <div class="contact-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">1.2 After Hours Support</h4>
+                    <p class="text-gray-600">While our main office hours are Monday to Friday, 8am to 6pm, we offer limited emergency support for urgent gardening issues outside these hours. For after-hours emergencies that cannot wait until the next business day, please call our main number and follow the prompts to reach our on-call service manager. This service is reserved for true emergencies only and may incur additional fees depending on the nature and timing of the request.</p>
+                </div>
+                
+                <!-- Contact Item 3 -->
+                <div class="contact-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">1.3 Social Media Engagement</h4>
+                    <p class="text-gray-600">We maintain active social media profiles on platforms including Facebook, Instagram, Twitter, and Pinterest. While these channels are great for general questions, gardening tips, and seeing our latest projects, they are not recommended for service requests or urgent communications. Response times on social media may be slower than traditional channels. Please avoid sharing personal or sensitive information through public social media messages.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">2. Service Inquiries</h3>
+                
+                <!-- Contact Item 4 -->
+                <div class="contact-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">2.1 Requesting Quotes</h4>
+                    <p class="text-gray-600">To receive an accurate quote for our gardening services, please provide detailed information about your project through our contact form or by phone. Essential details include property size, current condition, desired services, and any special requirements. For landscape design projects, we typically schedule an on-site consultation before providing a quote. Simple maintenance services can often be quoted based on your description. We aim to provide all quotes within 3 business days of receiving necessary information.</p>
+                </div>
+                
+                <!-- Contact Item 5 -->
+                <div class="contact-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">2.2 Scheduling Consultations</h4>
+                    <p class="text-gray-600">Professional consultations are available by appointment Monday through Saturday. Our standard consultation lasts 60-90 minutes and includes a property assessment, discussion of your goals, and preliminary recommendations. There is a $75 consultation fee for residential properties, which is credited toward future services if you choose to work with us. Commercial property consultations have different pricing based on property size and complexity. Please bring any relevant property surveys or HOA guidelines to your consultation.</p>
+                </div>
+                
+                <!-- Contact Item 6 -->
+                <div class="contact-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">2.3 Existing Customer Support</h4>
+                    <p class="text-gray-600">Current Leafreign clients have access to priority support channels. If you're an existing customer with questions about your service or account, please mention your customer ID when contacting us to expedite service. For routine maintenance schedule changes, email is often the most efficient method. For urgent service issues during an active project, please call our project hotline at (123) 456-7891. Each service team also provides direct contact information for ongoing projects.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">3. Office Information</h3>
+                
+                <!-- Contact Item 7 -->
+                <div class="contact-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">3.1 Main Office Location</h4>
+                    <p class="text-gray-600">Our headquarters is located at 345 E 24th St, New York, NY 10010 in the Kips Bay neighborhood. The office is open for walk-in visitors Monday to Friday from 9am to 5pm, though appointments are recommended to ensure staff availability. Parking is available in nearby garages, and the office is accessible via multiple subway lines (6 train at 23rd St, PATH at 23rd St). We have a small display garden at our office location showcasing some of our signature designs and plant selections.</p>
+                </div>
+                
+                <!-- Contact Item 8 -->
+                <div class="contact-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">3.2 Regional Service Areas</h4>
+                    <p class="text-gray-600">While based in Manhattan, Leafreign serves the entire New York metropolitan area including all five boroughs, Westchester County, Nassau County, and parts of northern New Jersey. Service availability varies by location and season, with certain specialized services offered only in specific areas. Contact us to confirm service availability in your neighborhood. We are currently expanding our service area and will update this information as new regions become available.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">4. Department Contacts</h3>
+                
+                <!-- Contact Item 9 -->
+                <div class="contact-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">4.1 Customer Service</h4>
+                    <p class="text-gray-600">Our customer service team handles general inquiries, service coordination, and account management. Contact them for billing questions, service scheduling, or general information about our offerings. The customer service department operates from 8am to 6pm daily and can be reached at service@leafreign.com or (123) 456-7892. For urgent matters, please call our main line for immediate assistance.</p>
+                </div>
+                
+                <!-- Contact Item 10 -->
+                <div class="contact-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">4.2 Sales and Marketing</h4>
+                    <p class="text-gray-600">For inquiries related to partnerships, promotions, or marketing opportunities, please reach out to our sales and marketing team. They can provide information on current offers, referral programs, and collaboration opportunities. You can contact them at marketing@leafreign.com or (123) 456-7893. We are always looking for ways to engage with our community and expand our reach.</p>
+                </div>
+                
+                <!-- Contact Item 11 -->
+                <div class="contact-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">4.3 Technical Support</h4>
+                    <p class="text-gray-600">For technical issues related to our website or online services, our technical support team is available to assist you. They can help with account access issues, website navigation, and troubleshooting online forms. Reach out to them at techsupport@leafreign.com or (123) 456-7894. We strive to ensure a seamless online experience for all our users.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">5. Frequently Asked Questions</h3>
+                
+                <!-- Contact Item 12 -->
+                <div class="contact-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">5.1 Common Inquiries</h4>
+                    <p class="text-gray-600">Many clients have similar questions regarding our services, pricing, and policies. We encourage you to check our FAQ section on the website for quick answers to common inquiries. Topics include service descriptions, pricing structures, and our cancellation policy. If your question isn't answered there, feel free to reach out directly through our contact form or by phone.</p>
+                </div>
+                
+                <!-- Contact Item 13 -->
+                <div class="contact-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">5.2 Response Times</h4>
+                    <p class="text-gray-600">We aim to respond to all inquiries within 24-48 hours during business days. For urgent matters, please call our main line for immediate assistance. Our customer service team is dedicated to providing timely and helpful responses to all client inquiries. If you have not received a response within this timeframe, please check your spam folder or reach out again.</p>
+                </div>
+                
+                <!-- Contact Item 14 -->
+                <div class="contact-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">5.3 Service Availability</h4>
+                    <p class="text-gray-600">Service availability may vary based on location and season. We recommend contacting us directly to confirm whether we can accommodate your specific needs. Our team is always ready to assist you in finding the best solutions for your gardening projects, regardless of the time of year.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">6. Feedback and Suggestions</h3>
+                
+                <!-- Contact Item 15 -->
+                <div class="contact-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">6.1 We Value Your Input</h4>
+                    <p class="text-gray-600">At Leafreign, we are committed to continuous improvement and value your feedback. If you have suggestions for how we can enhance our services or your experience, please let us know. Your insights help us better serve our clients and improve our offerings. You can provide feedback through our contact form or directly via email.</p>
+                </div>
+                
+                <!-- Contact Item 16 -->
+                <div class="contact-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">6.2 Customer Satisfaction Surveys</h4>
+                    <p class="text-gray-600">After completing a service, we may send you a customer satisfaction survey. Your responses are invaluable in helping us assess our performance and identify areas for improvement. We appreciate your time and honesty in providing feedback, as it directly influences our service quality and client satisfaction.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">7. Community Engagement</h3>
+                
+                <!-- Contact Item 17 -->
+                <div class="contact-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">7.1 Local Events and Workshops</h4>
+                    <p class="text-gray-600">Leafreign is actively involved in the local community and often hosts gardening workshops and events. These events are designed to educate and engage the community in sustainable gardening practices. Stay tuned to our website and social media for announcements about upcoming events, and feel free to reach out if you have ideas for future workshops.</p>
+                </div>
+                
+                <!-- Contact Item 18 -->
+                <div class="contact-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">7.2 Volunteer Opportunities</h4>
+                    <p class="text-gray-600">We believe in giving back to the community and often seek volunteers for various gardening projects and community beautification efforts. If you're interested in volunteering with Leafreign, please contact us for more information on upcoming opportunities. We welcome individuals of all skill levels to join us in making a positive impact.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">8. Environmental Commitment</h3>
+                
+                <!-- Contact Item 19 -->
+                <div class="contact-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">8.1 Sustainable Practices</h4>
+                    <p class="text-gray-600">Leafreign is committed to environmentally friendly gardening practices. We prioritize the use of native plants, organic fertilizers, and sustainable landscaping techniques. If you have questions about our environmental policies or want to learn more about sustainable gardening, please reach out. We are passionate about promoting eco-friendly practices in our community.</p>
+                </div>
+                
+                <!-- Contact Item 20 -->
+                <div class="contact-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">8.2 Partnerships with Local Organizations</h4>
+                    <p class="text-gray-600">We collaborate with local environmental organizations to promote sustainability and conservation efforts. If you're part of an organization that shares our values and would like to partner with us on community initiatives, please contact us. Together, we can make a greater impact on our environment and community.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">9. Conclusion</h3>
+                
+                <!-- Contact Item 21 -->
+                <div class="contact-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">9.1 Thank You for Reaching Out</h4>
+                    <p class="text-gray-600">We appreciate your interest in Leafreign and look forward to assisting you with your gardening needs. Whether you have questions, need a quote, or want to schedule a consultation, our team is here to help. Your satisfaction is our priority, and we are committed to providing exceptional service. Thank you for considering Leafreign for your gardening projects!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-6 bg-gray-800 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2023 Leafreign. All rights reserved.</p>
+            <p>345 E 24th St, New York, NY 10010, USA</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+</body>
+</html>

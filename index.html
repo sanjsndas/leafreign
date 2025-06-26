@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leafreign - Where Green Takes the Crown</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-green: #2e7d32;
+            --secondary-green: #81c784;
+            --accent-gold: #ffd700;
+            --dark-green: #1b5e20;
+            --light-bg: #f1f8e9;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--light-bg);
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('p2.jpeg');
+            background-size: cover;
+            background-position: center;
+            min-height: 70vh;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-green);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--dark-green);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .feedback-form {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-card {
+            border: 2px solid var(--secondary-green);
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .service-card:hover {
+            background-color: white;
+            border-color: var(--accent-gold);
+            transform: scale(1.03);
+        }
+        
+        .service-image {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .service-card:hover .service-image {
+            transform: scale(1.1);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-gold);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease forwards;
+        }
+        
+        .staggered > * {
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+        }
+        
+        .staggered > *:nth-child(1) { animation-delay: 0.1s; }
+        .staggered > *:nth-child(2) { animation-delay: 0.3s; }
+        .staggered > *:nth-child(3) { animation-delay: 0.5s; }
+        .staggered > *:nth-child(4) { animation-delay: 0.7s; }
+        .staggered > *:nth-child(5) { animation-delay: 0.9s; }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                <img src="p1.png" alt="Leafreign Logo" class="h-10 w-10">
+                <span class="text-2xl font-bold text-gray-800">Leafreign</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link text-gray-800 hover:text-green-700 font-medium" tabindex="0" aria-current="page">Home</a> 
+                <a href="privacy.html" class="nav-link text-gray-800 hover:text-green-700 font-medium" tabindex="0">Privacy</a>
+                <a href="terms.html" class="nav-link text-gray-800 hover:text-green-700 font-medium" tabindex="0">Terms & Conditions</a>
+                <a href="cookies.html" class="nav-link text-gray-800 hover:text-green-700 font-medium" tabindex="0">Cookies</a>
+                 <a href="contact.html" class="nav-link text-gray-800 hover:text-green-700 font-medium" tabindex="0">Contact Us</a>
+            </div>
+            
+            <button class="md:hidden bg-green-600 text-white px-4 py-2 rounded-lg">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center text-center text-white">
+        <div class="container mx-auto px-6">
+            <div class="staggered space-y-6">
+                <h1 class="text-5xl font-bold mb-4 fade-in">Where Green Takes the Crown</h1>
+                <p class="text-xl mb-8 max-w-2xl mx-auto fade-in">Nature rules with Leafreign - transforming spaces into sustainable, breathtaking green landscapes since 2010.</p>
+                <a href="#contact" class="btn-primary text-white font-bold py-3 px-8 rounded-full inline-block fade-in">
+                    Get Your Free Consultation
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Premium Gardening Services</h2>
+                <div class="w-24 h-1 bg-green-600 mx-auto"></div>
+                <p class="text-xl text-gray-600 mt-4 max-w-3xl mx-auto">From urban gardens to expansive landscapes, our expert team delivers exceptional services tailored to your needs. Experience nature's beauty with our specialized gardening solutions.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card rounded-lg overflow-hidden bg-gray-50 fade-in">
+                    <div class="overflow-hidden">
+                        <img src="s1.jpeg" alt="Landscape Design" class="service-image">
+                    </div>
+                    <div class="p-6 text-center">
+                        <div class="text-green-600 text-5xl mb-4">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Landscape Design</h3>
+                        <p class="text-gray-600 mb-6">Our award-winning designers create custom landscapes that blend functionality with aesthetic appeal. We consider sunlight patterns, soil conditions, and your personal style to craft outdoor spaces you'll love for years.</p>
+                        <a href="#" class="text-green-600 font-medium hover:underline">Learn More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card rounded-lg overflow-hidden bg-gray-50 fade-in">
+                    <div class="overflow-hidden">
+                        <img src="s2.jpeg" alt="Organic Maintenance" class="service-image">
+                    </div>
+                    <div class="p-6 text-center">
+                        <div class="text-green-600 text-5xl mb-4">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Organic Maintenance</h3>
+                        <p class="text-gray-600 mb-6">Our chemical-free approach keeps your garden thriving while protecting pollinators and local ecosystems. We use natural pest control methods and organic fertilizers to maintain plant health without harmful chemicals.</p>
+                        <a href="#" class="text-green-600 font-medium hover:underline">Learn More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card rounded-lg overflow-hidden bg-gray-50 fade-in">
+                    <div class="overflow-hidden">
+                        <img src="s3.jpeg" alt="Smart Irrigation" class="service-image">
+                    </div>
+                    <div class="p-6 text-center">
+                        <div class="text-green-600 text-5xl mb-4">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Smart Irrigation</h3>
+                        <p class="text-gray-600 mb-6">Our precision watering systems adapt to weather conditions and plant needs, conserving water while keeping your landscape lush. Features include soil moisture sensors and automated scheduling.</p>
+                        <a href="#" class="text-green-600 font-medium hover:underline">Learn More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card rounded-lg overflow-hidden bg-gray-50 fade-in">
+                    <div class="overflow-hidden">
+                        <img src="s4.jpeg" alt="Vertical Gardens" class="service-image">
+                    </div>
+                    <div class="p-6 text-center">
+                        <div class="text-green-600 text-5xl mb-4">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Vertical Gardens</h3>
+                        <p class="text-gray-600 mb-6">Transform blank walls into living art with our space-saving vertical gardens. Perfect for urban environments, these installations improve air quality while adding natural beauty to any setting.</p>
+                        <a href="#" class="text-green-600 font-medium hover:underline">Learn More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card rounded-lg overflow-hidden bg-gray-50 fade-in">
+                    <div class="overflow-hidden">
+                        <img src="s5.jpeg" alt="Edible Gardens" class="service-image">
+                    </div>
+                    <div class="p-6 text-center">
+                        <div class="text-green-600 text-5xl mb-4">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Edible Gardens</h3>
+                        <p class="text-gray-600 mb-6">Create your own organic food source with beautifully designed edible gardens. We select varieties suited to your climate and provide maintenance guidance so you can enjoy fresh, healthy produce.</p>
+                        <a href="#" class="text-green-600 font-medium hover:underline">Learn More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card rounded-lg overflow-hidden bg-gray-50 fade-in">
+                    <div class="overflow-hidden">
+                        <img src="s6.jpeg" alt="Sustainable Solutions" class="service-image">
+                    </div>
+                    <div class="p-6 text-center">
+                        <div class="text-green-600 text-5xl mb-4">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Sustainable Solutions</h3>
+                        <p class="text-gray-600 mb-6">Our eco-conscious designs include composting systems, rainwater harvesting, and permaculture principles. We create gardens that give back to the environment while minimizing maintenance.</p>
+                        <a href="#" class="text-green-600 font-medium hover:underline">Learn More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12 fade-in">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">About Leafreign</h2>
+                    <p class="text-lg text-gray-600 mb-6">Founded in 2010, Leafreign began as a small team of passionate horticulturists with a vision to bring nature back into urban spaces. Our name reflects our ethos: <strong>Leaf + Reign = Nature Rules</strong>. We believe in creating outdoor spaces that don't just look beautiful but contribute positively to the ecosystem.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="p-4 bg-white rounded-lg shadow">
+                            <h3 class="text-xl font-bold mb-2 text-green-700">Our Mission</h3>
+                            <p class="text-gray-600">To transform urban environments into thriving green spaces that benefit both people and the planet through sustainable gardening practices.</p>
+                        </div>
+                        
+                        <div class="p-4 bg-white rounded-lg shadow">
+                            <h3 class="text-xl font-bold mb-2 text-green-700">Our Values</h3>
+                            <ul class="text-gray-600 list-disc pl-5 space-y-2">
+                                <li>Sustainability in all our projects</li>
+                                <li>Education and community involvement</li>
+                                <li>Innovation in garden design</li>
+                                <li>Preservation of native ecosystems</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 space-y-4">
+                        <div class="flex items-start">
+                            <div class="text-green-600 mr-4 mt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">600+ Projects Completed</h4>
+                                <p class="text-gray-600">From rooftop gardens to corporate landscapes, we've transformed spaces across the country.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-green-600 mr-4 mt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Sustainable Practices</h4>
+                                <p class="text-gray-600">We use 90% native plants and implement water conservation techniques in all our designs.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-green-600 mr-4 mt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Certified Professionals</h4>
+                                <p class="text-gray-600">Our team includes certified arborists, landscape architects, and organic gardening specialists.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 relative fade-in">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="rounded-lg overflow-hidden shadow-lg">
+                            <img src="p1.png" alt="Our team working" class="w-full h-64 object-cover">
+                        </div>
+                    <div class="absolute -bottom-6 -right-6 bg-green-600 text-white p-4 rounded-lg shadow-xl">
+                        <h4 class="font-bold text-xl">12+ Years</h4>
+                        <p class="text-sm">of Excellence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-green-700 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">What Our Clients Say</h2>
+                <div class="w-24 h-1 bg-yellow-400 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card p-8 fade-in">
+                    <div class="flex items-center mb-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Sarah J.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Leafreign transformed our dull backyard into an oasis. Their attention to detail and plant selection was impeccable. We now have birds visiting daily and our kids love playing outside!"</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card p-8 fade-in">
+                    <div class="flex items-center mb-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Michael T.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"As a restaurant owner, our outdoor seating area was crucial. Leafreign created a stunning vertical garden that became our signature feature. Customers constantly compliment the ambiance."</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card p-8 fade-in">
+                    <div class="flex items-center mb-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Emily R.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"The team at Leafreign was professional and knowledgeable. They helped us choose the right plants for our climate and the results are stunning. Highly recommend!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gardening Tips Section -->
+    <section id="tips" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Gardening Tips for Everyone</h2>
+                <div class="w-24 h-1 bg-green-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 border rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">1. Know Your Soil</h3>
+                    <p class="text-gray-600">Understanding your soil type is crucial for successful gardening. Test your soil to determine its pH and nutrient levels.</p>
+                </div>
+                <div class="p-6 border rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">2. Choose Native Plants</h3>
+                    <p class="text-gray-600">Native plants are adapted to your local climate and soil conditions, making them easier to care for and more beneficial to local wildlife.</p>
+                </div>
+                <div class="p-6 border rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">3. Water Wisely</h3>
+                    <p class="text-gray-600">Water your plants early in the morning or late in the evening to minimize evaporation. Consider using drip irrigation for efficiency.</p>
+                </div>
+                <div class="p-6 border rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">4. Mulch for Moisture</h3>
+                    <p class="text-gray-600">Applying mulch helps retain soil moisture, suppress weeds, and improve soil quality as it breaks down.</p>
+                </div>
+                <div class="p-6 border rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">5. Rotate Your Crops</h3>
+                    <p class="text-gray-600">Crop rotation helps prevent soil depletion and reduces the risk of pests and diseases.</p>
+                </div>
+                <div class="p-6 border rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">6. Prune Regularly</h3>
+                    <p class="text-gray-600">Regular pruning encourages healthy growth and can help prevent disease by improving air circulation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Form Section -->
+    <section id="feedback" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">We Value Your Feedback</h2>
+                <div class="w-24 h-1 bg-green-600 mx-auto"></div>
+                <p class="text-lg text-gray-600 mt-4">Please share your thoughts about our services. Your feedback helps us improve and serve you better!</p>
+            </div>
+            <form class="feedback-form p-8 rounded-lg shadow-lg bg-white">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700">Name</label>
+                    <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email</label>
+                    <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700">Message</label>
+                    <textarea id="message" rows="4" class="w-full p-2 border border-gray-300 rounded" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary text-white font-bold py-2 px-4 rounded">Submit Feedback</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Disclaimer Section -->
+    <section class="py-10 bg-gray-200">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-600">Disclaimer: The information provided on this website is for general informational purposes only. Leafreign does not guarantee the accuracy or completeness of any information on this site.</p>
+        </div>
+    </section>
+
+    <!-- Customer Satisfaction Section -->
+    <section class="py-10 bg-green-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold mb-4">Customer Satisfaction is Our Priority</h2>
+            <p class="mb-4">We strive to exceed your expectations with every project. Your feedback is invaluable to us!</p>
+            <p>Contact us today to learn more about our services and how we can help you create your dream garden.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-6 bg-gray-800 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2023 Leafreign. All rights reserved.</p>
+            <p>345 E 24th St, New York, NY 10010, USA</p>
+        </div>
+    </footer>
+</body>
+</html>

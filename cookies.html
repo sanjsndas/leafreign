@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Policy - Leafreign</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-green: #2e7d32;
+            --secondary-green: #81c784;
+            --accent-gold: #ffd700;
+            --dark-green: #1b5e20;
+            --light-bg: #f1f8e9;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--light-bg);
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('p2.jpeg');
+            background-size: cover;
+            background-position: center;
+            min-height: 40vh;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-gold);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .section-heading {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-green);
+        }
+        
+        .cookie-item {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255,255,255,0.95);
+            padding: 20px;
+            box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+            z-index: 1000;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="p1.png" alt="Leafreign Logo" class="h-10 w-10">
+                <span class="text-2xl font-bold text-gray-800">Leafreign</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link text-gray-800 hover:text-green-700 font-medium">Home</a>
+                <a href="privacy.html" class="nav-link text-gray-800 hover:text-green-700 font-medium">Privacy</a>
+                <a href="terms.html" class="nav-link text-gray-800 hover:text-green-700 font-medium">Terms & Conditions</a>
+                <a href="cookies.html" class="nav-link text-green-700 font-medium" aria-current="page">Cookies</a>
+                 <a href="contact.html" class="nav-link text-gray-800 hover:text-green-700 font-medium">Contact Us</a>
+            </div>
+            
+            <button class="md:hidden bg-green-600 text-white px-4 py-2 rounded-lg">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center text-center text-white">
+        <div class="container mx-auto px-6">
+            <h1 class="text-5xl font-bold mb-4">Cookie Policy</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Understanding how we use cookies and tracking technologies</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-2">Our Use of Cookies</h2>
+                    <div class="w-24 h-1 bg-green-600 mx-auto"></div>
+                </div>
+                
+                <div class="mb-16">
+                    <p class="text-lg text-gray-600 mb-6">Leafreign ("we", "our", or "us") uses cookies and similar tracking technologies to enhance your experience on our website. This policy explains what cookies are, how we use them, and your choices regarding cookies.</p>
+                    
+                    <p class="text-lg text-gray-600 mb-6">This policy was last updated on June 15, 2023. We may update this Cookie Policy from time to time to reflect changes in technology or data protection regulations. Please check this page regularly to stay informed about our cookie practices.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">1. What Are Cookies?</h3>
+                
+                <!-- Cookie Item 1 -->
+                <div class="cookie-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">1.1 Definition of Cookies</h4>
+                    <p class="text-gray-600">Cookies are small text files that are placed on your computer, smartphone, or other device when you visit a website. They are widely used to make websites work more efficiently and to provide information to website owners. Cookies are not programs and cannot carry viruses or install malware. They typically contain the name of the originating domain, a unique identifier, and some digits and numbers that allow the website to recognize your actions and preferences over time.</p>
+                </div>
+                
+                <!-- Cookie Item 2 -->
+                <div class="cookie-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">1.2 How Cookies Work</h4>
+                    <p class="text-gray-600">When you visit a website, the server sends small bits of data (cookies) to your browser which stores them according to the domain rules. When you return to the same site, your browser sends these cookies back to the server, allowing the site to "remember" your previous interactions. First-party cookies are set by the website you're visiting, while third-party cookies come from other domains that provide content or features on the page. Cookies can have different lifespans, ranging from "session cookies" that expire when you close your browser to "persistent cookies" that remain for a set period or until manually deleted.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">2. Types of Cookies We Use</h3>
+                
+                <!-- Cookie Item 3 -->
+                <div class="cookie-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">2.1 Strictly Necessary Cookies</h4>
+                    <p class="text-gray-600">These essential cookies are required for the website to function properly and cannot be switched off. They enable core functionality such as security, network management, and accessibility. Without these cookies, services you've asked for cannot be provided. These cookies don't collect personal information, and they're typically set in response to actions made by you such as setting your privacy preferences, logging in, or filling in forms. We use strictly necessary cookies to maintain user sessions, prevent fraudulent use of login credentials, and ensure secure shopping cart and checkout processes.</p>
+                </div>
+                
+                <!-- Cookie Item 4 -->
+                <div class="cookie-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">2.2 Performance Cookies</h4>
+                    <p class="text-gray-600">These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously. They allow us to count visits and traffic sources so we can measure and improve site performance. Performance cookies help us identify the most and least popular pages and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you don't allow these cookies, we can't know when you've visited our site and won't be able to monitor its performance or identify potential issues.</p>
+                </div>
+                
+                <!-- Cookie Item 5 -->
+                <div class="cookie-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">2.3 Functional Cookies</h4>
+                    <p class="text-gray-600">Functional cookies enable enhanced functionality and personalization such as live chats and remembering your preferences. They may be set by us (first-party cookies) or by third-party providers whose services we've added to our pages (third-party cookies). For example, we use functional cookies to remember your location preferences (such as language or region) so you don't have to keep re-entering them. Without these cookies, some services you've asked for may not function properly, and you may experience less optimized navigation between pages.</p>
+                </div>
+                
+                <!-- Cookie Item 6 -->
+                <div class="cookie-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">2.4 Targeting Cookies</h4>
+                    <p class="text-gray-600">These cookies may be set through our site by our advertising partners to build a profile of your interests. They work by uniquely identifying your browser and device but don't collect personal data like your name. The information obtained may be used to send you relevant advertising on other sites and measure the effectiveness of advertising campaigns. If you don't allow these cookies, you'll experience less targeted advertising. We use targeting cookies to limit how many times you see an ad and to measure campaign effectiveness (advertising cookies).</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">3. Specific Cookies We Use</h3>
+                
+                <!-- Cookie Item 7 -->
+                <div class="cookie-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">3.1 Google Analytics</h4>
+                    <p class="text-gray-600">We use Google Analytics to understand how our website is used and measure site performance. Google Analytics sets cookies that collect information about how visitors use our site, including pages visited and time spent. This helps us improve site navigation and content. The data is collected anonymously and includes the number of visitors, where they come from, and pages visited. We've configured Google Analytics to anonymize IP addresses and disabled data sharing with Google. You can opt out using Google's opt-out browser add-on or through our cookie management tool.</p>
+                </div>
+                
+                <!-- Cookie Item 8 -->
+                <div class="cookie-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">3.2 Facebook Pixel</h4>
+                    <p class="text-gray-600">The Facebook Pixel helps us understand the effectiveness of our Facebook advertising by tracking conversions from Facebook ads. It uses cookies to track actions visitors take after viewing or clicking on a Facebook ad. This data helps us optimize our advertising strategy and show ads to people who are most likely to be interested in our services. The Facebook Pixel tracks events such as page views, form submissions, and purchases. We don't receive personal data from Facebook, just aggregated reports. You can control your Facebook ad preferences in your Facebook account settings.</p>
+                </div>
+                
+                <!-- Cookie Item 9 -->
+                <div class="cookie-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">3.3 Live Chat Cookies</h4>
+                    <p class="text-gray-600">If you use our live chat feature, cookies are used to remember your chat history and preferences so you don't have to repeat information. These cookies help our support team provide better service by maintaining context across pages. They remember whether you've been helped before and can connect you with the same representative if appropriate. The cookies also help us analyze chat performance to improve our customer service. If you prefer not to use cookies for the live chat, you can still contact us through other methods like phone or email.</p>
+                </div>
+                
+                <!-- Cookie Item 10 -->
+                <div class="cookie-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">3.4 Session Cookies</h4>
+                    <p class="text-gray-600">Session cookies are temporary cookies that remain only until you close your browser. These are essential for secure areas of our website and enable features like remembering items in your shopping cart or maintaining your logged-in status. They help maintain security by ensuring that session information isn't stored on your device longer than necessary. Session cookies don't collect information from your computer and are deleted immediately when you end your session. Without these cookies, many website functions wouldn't operate correctly, and security might be compromised.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">4. Managing Your Cookie Preferences</h3>
+                
+                <!-- Cookie Item 11 -->
+                <div class="cookie-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">4.1 Browser Settings</h4>
+                    <p class="text-gray-600">Most web browsers allow control of cookies through their settings. You can typically find these in the 'Options' or 'Preferences' menu. Common options include accepting all cookies, being notified when a cookie is set, or rejecting all cookies. However, blocking all cookies might affect website functionality as some are essential for core features. Browser settings typically allow you to delete existing cookies and control whether new ones can be set. For more specific instructions, consult your browser's help documentation. Note that cookie preferences are browser-specific, so you'll need to adjust settings in each browser you use.</p>
+                </div>
+                
+                <!-- Cookie Item 12 -->
+                <div class="cookie-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">4.2 Third-Party Opt-Out Tools</h4>
+                    <p class="text-gray-600">Several industry associations offer tools to help manage online behavioral advertising preferences. These tools allow you to opt out of targeted ads from member companies. In the US, visit the Digital Advertising Alliance's opt-out page, and in Europe, the EDAA's Your Online Choices site provides similar functionality. These programs don't block all ads, just those delivered through targeted cookie-based advertising. They work by placing an opt-out cookie to indicate your preferences, which means you'll need to repeat the process if you clear cookies. We participate in these programs to provide you with more control over your online experience.</p>
+                </div>
+                
+                <!-- Cookie Item 13 -->
+                <div class="cookie-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">4.3 Mobile Device Settings</h4>
+                    <p class="text-gray-600">On mobile devices, cookie management may be handled through device settings rather than browser settings, especially when using apps. Both iOS and Android provide privacy controls that affect cookie behavior. The exact steps vary by device and operating system version, but you can typically find these settings under "Privacy" or "Site Settings" menus. Some mobile browsers provide enhanced cookie controls specific to third-party cookies. Mobile ad IDs can also be reset or disabled to limit tracking across apps. Remember that mobile browsers may handle cookies differently than desktop browsers even on the same website.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">5. Cookie Duration & Expiration</h3>
+                
+                <!-- Cookie Item 14 -->
+                <div class="cookie-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">5.1 Persistent Cookies</h4>
+                    <p class="text-gray-600">Persistent cookies remain on your device for a set period specified in the cookie or until manually deleted. These cookies enable websites to remember your preferences across multiple visits. Our persistent cookies typically have expiration dates ranging from 30 days to 2 years depending on their purpose. Analytics and advertising cookies often have longer durations to track usage patterns over time, while preference cookies may expire more quickly as your settings could change. The expiration is set in advance, and the cookie stops functioning after this date. You can delete persistent cookies manually through your browser settings at any time.</p>
+                </div>
+                
+                <!-- Cookie Item 15 -->
+                <div class="cookie-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">5.2 Session Cookies</h4>
+                    <p class="text-gray-600">Session cookies are automatically deleted when you close your browser. They're essential for fundamental site functions like keeping you logged in during your visit or remembering items in your shopping cart. Since they don't persist, they must be recreated each time you visit the site. Session cookies contain no personally identifiable information and are more secure as they don't remain on your device. However, they can't provide continuity between browsing sessions. Some websites may use session cookies to enhance user experience by remembering your preferences during a single visit, but they will not track your activity once you leave the site.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">6. Your Rights Regarding Cookies</h3>
+                
+                <!-- Cookie Item 16 -->
+                <div class="cookie-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">6.1 Right to Access</h4>
+                    <p class="text-gray-600">You have the right to request access to the personal data we hold about you, including any data collected through cookies. This right allows you to understand what information we have and how it is used. To exercise this right, you can contact us directly through our contact form or email. We will respond to your request within the legally required timeframe and provide you with the necessary information regarding your data.</p>
+                </div>
+                
+                <!-- Cookie Item 17 -->
+                <div class="cookie-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">6.2 Right to Rectification</h4>
+                    <p class="text-gray-600">If you believe that any personal data we hold about you is inaccurate or incomplete, you have the right to request rectification. This means you can ask us to correct any errors or update your information. We take such requests seriously and will make the necessary changes as soon as possible. You can submit your request through our contact channels, and we will confirm once the rectification has been made.</p>
+                </div>
+                
+                <!-- Cookie Item 18 -->
+                <div class="cookie-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">6.3 Right to Erasure</h4>
+                    <p class="text-gray-600">You have the right to request the deletion of your personal data, including data collected through cookies, under certain circumstances. This right is also known as the "right to be forgotten." If you wish to exercise this right, please contact us with your request, and we will assess whether we can comply based on the legal grounds for processing your data. We will inform you of the outcome of your request.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">7. Changes to This Cookie Policy</h3>
+                
+                <!-- Cookie Item 19 -->
+                <div class="cookie-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">7.1 Policy Updates</h4>
+                    <p class="text-gray-600">We may update this Cookie Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. When we make changes, we will update the "last updated" date at the top of this policy. We encourage you to review this policy periodically to stay informed about our use of cookies and your rights. If we make significant changes, we will notify you through our website or via email.</p>
+                </div>
+                
+                <!-- Cookie Item 20 -->
+                <div class="cookie-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">7.2 Contact Information</h4>
+                    <p class="text-gray-600">If you have any questions about this Cookie Policy, our use of cookies, or your rights regarding your personal data, please contact us. You can reach us at contact@leafreign.com or by using the contact form on our website. We are committed to addressing your concerns and ensuring your privacy is respected.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">8. Cookie Consent Management</h3>
+                
+                <!-- Cookie Item 21 -->
+                <div class="cookie-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">8.1 Cookie Consent Banner</h4>
+                    <p class="text-gray-600">When you first visit our website, you will see a cookie consent banner that informs you about our use of cookies. This banner provides you with options to accept or decline non-essential cookies. By clicking "Accept," you consent to our use of cookies as described in this policy. If you choose to decline, only strictly necessary cookies will be set on your device.</p>
+                </div>
+                
+                <!-- Cookie Item 22 -->
+                <div class="cookie-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">8.2 Managing Preferences</h4>
+                    <p class="text-gray-600">You can manage your cookie preferences at any time by clicking on the "Cookie Settings" link in the footer of our website. This will allow you to review and change your consent choices regarding different types of cookies. You can also withdraw your consent at any time by adjusting your browser settings or using the opt-out tools mentioned earlier.</p>
+                </div>
+                
+                <h3 class="section-heading text-2xl font-bold text-gray-800 mb-8">9. Conclusion</h3>
+                
+                <!-- Cookie Item 23 -->
+                <div class="cookie-item">
+                    <h4 class="text-xl font-bold text-green-700 mb-4">9.1 Final Thoughts</h4>
+                    <p class="text-gray-600">Understanding our cookie policy is essential for making informed choices about your online privacy. We value your trust and are committed to being transparent about how we use cookies and similar technologies. If you have any questions or concerns, please don't hesitate to reach out to us. Thank you for visiting Leafreign and for your continued support!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-banner">
+        <p class="text-gray-700">We use cookies to enhance your experience. By clicking "Accept," you consent to our use of cookies. You can manage your preferences in the settings.</p>
+        <div>
+            <button class="bg-green-600 text-white px-4 py-2 rounded-lg mr-2" id="acceptCookies">Accept</button>
+            <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded-lg" id="declineCookies">Decline</button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="py-6 bg-gray-800 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2023 Leafreign. All rights reserved.</p>
+            <p>345 E 24th St, New York, NY 10010, USA</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+</body>
+</html>
